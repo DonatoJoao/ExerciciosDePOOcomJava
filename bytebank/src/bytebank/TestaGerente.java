@@ -14,6 +14,7 @@ public class TestaGerente {
 		System.out.println(priscila.getCpf());
 		System.out.println(priscila.getSalario());
 		System.out.println(priscila.autentica(5555));
+		System.out.println(priscila.getBonificacao());
 		
 
 	}

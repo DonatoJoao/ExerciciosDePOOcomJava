@@ -13,7 +13,7 @@ public class Testefuncionario {
 		
 		System.out.println(joao.getNome());
 		System.out.println(joao.getSalario());
-		System.out.println(joao.bonificacao());
+		System.out.println(joao.getBonificacao());
 	}
 
 }
