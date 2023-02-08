@@ -1,5 +1,7 @@
 package bytebank;
 
+import funcionarios.Funcionario;
+
 public class ControleBonificao {
 
 	private double soma;

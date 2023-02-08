@@ -1,4 +1,6 @@
-package bytebank;
+package contas;
+
+import cliente.Cliente;
 
 public class Conta {
 
@@ -26,6 +28,17 @@ public class Conta {
 			this.saldo -= valor;
 			return true;
 		}	
+	}
+	
+	public boolean transfere (double valor, Conta destino) {
+		if(this.saldo > valor) {
+			this.saldo = saldo - valor;
+			destino.deposita(valor);
+			
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 	public double getSaldo() {

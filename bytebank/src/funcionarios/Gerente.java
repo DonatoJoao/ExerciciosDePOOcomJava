@@ -1,4 +1,4 @@
-package bytebank;
+package funcionarios;
 
 public class Gerente extends Funcionario {
 

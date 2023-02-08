@@ -1,5 +1,8 @@
 package bytebank;
 
+import cliente.Cliente;
+import contas.Conta;
+
 public class TestaGetESet {
 
 	public static void main(String[] args) {
