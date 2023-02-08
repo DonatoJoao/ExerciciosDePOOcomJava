@@ -2,11 +2,13 @@ package bytebank;
 
 import cliente.Cliente;
 import contas.Conta;
+import contas.ContaCorrente;
+import contas.ContaPoupanca;
 
 public class TestaGetESet {
 
 	public static void main(String[] args) {
-		Conta conta = new Conta(55, 1346); //criando objeto com construtor 
+		Conta conta = new ContaCorrente(55, 1346); //criando objeto com construtor 
 		//conta.setNumero(1346);
 		System.out.println(conta.getNumero());
 		
@@ -24,11 +26,11 @@ public class TestaGetESet {
 		
 		System.out.println(Conta.getTotal());
 		
-		Conta conta2 = new Conta(55, 1347);
+		Conta conta2 = new ContaPoupanca(55, 1347);
 		System.out.println(Conta.getTotal());
-		Conta conta3 = new Conta(55, 1348);
+		Conta conta3 = new ContaPoupanca(55, 1348);
 		System.out.println(Conta.getTotal());
-		Conta conta4 = new Conta(55, 1349);		
+		Conta conta4 = new ContaCorrente(55, 1349);		
 		System.out.println(Conta.getTotal());
 	}
 }
