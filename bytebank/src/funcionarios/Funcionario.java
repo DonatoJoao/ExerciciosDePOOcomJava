@@ -1,14 +1,14 @@
 package funcionarios;
 
+//Não pode instaciar objetos dessa classe, pois é abstrata
 public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-		}
+	//método sem corpo, não tem implementação, os filhos são obrigados a implementa-los.
+	public abstract double getBonificacao(); 
 	
 	public String getNome() {
 		return nome;

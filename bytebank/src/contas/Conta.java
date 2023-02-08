@@ -2,6 +2,7 @@ package contas;
 
 import cliente.Cliente;
 
+//Não pode instaciar objetos dessa classe, pois é abstrata
 public abstract class Conta {
 
 	private int agencia;
