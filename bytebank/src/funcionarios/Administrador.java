@@ -8,7 +8,7 @@ public class Administrador extends Funcionario implements Autenticavel{
 	private AutenticacaoUtil autenticador;
 	
 	public Administrador() {
-		this.autenticador = new AutenticacaoUtil();
+		this.autenticador = new AutenticacaoUtil(); //relação de composição
 	}
 
 	@Override

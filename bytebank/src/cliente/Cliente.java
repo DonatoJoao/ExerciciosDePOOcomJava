@@ -14,7 +14,7 @@ public class Cliente implements Autenticavel {
 	public Cliente(String nome, String cpf) {
 		this.nome = nome;
 		this.cpf = cpf;
-		this.autenticador = new AutenticacaoUtil();
+		this.autenticador = new AutenticacaoUtil(); //relação de composição
 	}
 	
 	
