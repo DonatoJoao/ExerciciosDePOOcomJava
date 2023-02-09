@@ -1,4 +1,7 @@
-package funcionarios;
+package sistemaInterno;
+
+import funcionarios.Administrador;
+import funcionarios.Gerente;
 
 public class TesteSistemaInterno {
 

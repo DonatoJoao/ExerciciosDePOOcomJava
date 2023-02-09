@@ -1,6 +1,8 @@
 package cliente;
 
-public class Cliente {
+import sistemaInterno.Autenticavel;
+
+public class Cliente implements Autenticavel {
 	private String nome;
 	private String cpf;
 	private String profissao;
@@ -37,5 +39,21 @@ public class Cliente {
 	
 	public Endereco getEndereco() {
 		return endereco;
+	}
+
+	private int senha;
+	@Override
+	public void setSenha(int senha) {
+		this.senha = senha;
+		
+	}
+
+	@Override
+	public boolean autentica(int senha) {
+		if (this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
