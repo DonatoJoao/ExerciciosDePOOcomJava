@@ -1,5 +1,6 @@
 package cliente;
 
+import sistemaInterno.AutenticacaoUtil;
 import sistemaInterno.Autenticavel;
 
 public class Cliente implements Autenticavel {
@@ -7,11 +8,16 @@ public class Cliente implements Autenticavel {
 	private String cpf;
 	private String profissao;
 	private Endereco endereco;
+	private AutenticacaoUtil autenticador;
+	
 	
 	public Cliente(String nome, String cpf) {
 		this.nome = nome;
 		this.cpf = cpf;
+		this.autenticador = new AutenticacaoUtil();
 	}
+	
+	
 	
 //	public void setNome(String nome) {
 //		this.nome = nome;
@@ -41,19 +47,14 @@ public class Cliente implements Autenticavel {
 		return endereco;
 	}
 
-	private int senha;
+	
 	@Override
 	public void setSenha(int senha) {
-		this.senha = senha;
-		
-	}
+		this.autenticador.setSenha(senha);
+		}
 
 	@Override
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.autenticador.autentica(senha);
 	}
 }

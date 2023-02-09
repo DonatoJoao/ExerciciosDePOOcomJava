@@ -3,7 +3,7 @@ package cliente;
 public class TesteCliente {
 
 	public static void main(String[] args) {
-		Cliente c = new Cliente("João", "123123123-33");
+		Cliente c = new Cliente("Joï¿½o", "123123123-33");
 		Endereco endereco = new Endereco();
 		
 		c.setEndereco(endereco);
@@ -11,7 +11,8 @@ public class TesteCliente {
 		
 		System.out.println("Rua " + c.getEndereco().getRua());
 	
-		
+		endereco.setBairro("Cibratel");
+		System.out.println(c.getEndereco().getBairro());
 	
 	}
 
