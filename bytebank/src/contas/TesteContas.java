@@ -1,6 +1,9 @@
 package contas;
 
+import java.beans.Encoder;
+
 import cliente.Cliente;
+import cliente.Endereco;
 
 public class TesteContas {
 
@@ -33,7 +36,16 @@ public class TesteContas {
 		cc.saca(5);
 		System.out.println("Saldo CC depois do saque: " + cc.getSaldo());
 		
+		Endereco enderecoJoao = new Endereco();
+		joao.setEndereco(enderecoJoao);
+		enderecoJoao.setCidade("Itanhaém");
 		
+		System.out.println(cc.getTitular().getEndereco().getCidade());
+		
+		Endereco enderecoPriscila = new Endereco();
+		priscila.setEndereco(enderecoPriscila);
+		enderecoPriscila.setEstado("São Paulo");
+		System.out.println(cp.getTitular().getEndereco().getEstado());
 		
 	}
 	

@@ -8,7 +8,7 @@ public abstract class Conta {
 	private int agencia;
 	private int numero;
 	private double saldo;
-	private Cliente titular;
+	private Cliente titular; //composição
 	private static int total;
 	
 	public Conta(int agencia, int numero) {

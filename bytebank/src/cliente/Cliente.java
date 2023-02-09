@@ -4,6 +4,7 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	private String profissao;
+	private Endereco endereco;
 	
 	public Cliente(String nome, String cpf) {
 		this.nome = nome;
@@ -28,5 +29,13 @@ public class Cliente {
 	}
 	public String getProfissao() {
 		return profissao;
+	}
+	
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
+	public Endereco getEndereco() {
+		return endereco;
 	}
 }
